@@ -1,13 +1,17 @@
 # Project 13: Time Series Prediction Ensemble for Taxi Order Forecasting
 
 ## Overview
-Sweet Lift Taxi has collected historical data on taxi orders at airports. To attract more drivers during peak hours, we need to predict the number of taxi orders for the next hour. The goal is to build a model to make this prediction and ensure the RMSE on the test set does not exceed 48.
+Sweet Lift Taxi has collected historical data on taxi orders at airports. To attract more drivers during peak hours, we need to predict the number of taxi orders for the next hour. The goal was to build a model to make this prediction and ensure the RMSE on the test set does not exceed 48.
 
-## Instructions
-1. Download the data and resample it by one hour.
-2. Analyze the data.
-3. Train different models with varying hyperparameters. The test sample should be 10% of the initial dataset.
-4. Test the models using the test sample and provide a conclusion.
+## Dataset Description
+The data is stored in the file `taxi.csv`. The number of orders is in the column `num_orders`.
+
+## Project Structure
+- `data_preparation_analysis.py`: Code for loading, cleaning, and analyzing the dataset.
+- `feature_engineering.py`: Code for creating additional features from the time series data.
+- `model_training.py`: Code for training various machine learning models on the dataset.
+- `model_evaluation.py`: Code for testing and evaluating the models.
+- `results_summary.py`: Code for summarizing the results and providing conclusions.
 
 ## Dataset Description
 The data is stored in the file `taxi.csv`. The number of orders is in the column `num_orders`.
